@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <!-- Reproducibility is delegated to DotNet.ReproducibleBuilds rather than restated here.
          It sets DebugType to embedded (so the portable PDB with its Source Link map travels
@@ -6,12 +6,12 @@
          ContinuousIntegrationBuild for every CI provider it recognises, and publishes the
          repository URL, branch and commit into the nuspec. Source Link itself ships in the
          SDK. Deterministic is already the SDK default. -->
-    <TargetFrameworks>net10.0;net9.0;net11.0</TargetFrameworks>
+    <TargetFrameworks>net10.0</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <!-- Explicit rather than 'latest', which ties accepted syntax to the installed compiler.
          Extension blocks are used, so the net9.0 default of C# 13 will not compile this. -->
-    <LangVersion>15.0</LangVersion>
+    <!--<LangVersion>15.0</LangVersion>-->
     <AssemblyName>ObsWebSocket.Core</AssemblyName>
     <RootNamespace>ObsWebSocket.Core</RootNamespace>
     <PackageId>ObsWebSocket.Core</PackageId>
