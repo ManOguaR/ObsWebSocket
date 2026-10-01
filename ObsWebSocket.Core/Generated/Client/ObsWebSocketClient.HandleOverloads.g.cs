@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using ObsWebSocket.Core.Protocol.Requests;
 using ObsWebSocket.Core.Protocol.Responses;
 using ObsWebSocket.Core.Protocol.Common;
+using ObsWebSocket.Core.Handles;
 
 namespace ObsWebSocket.Core;
 

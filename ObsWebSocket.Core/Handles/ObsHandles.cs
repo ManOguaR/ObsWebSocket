@@ -1,6 +1,6 @@
 using System.Diagnostics.CodeAnalysis;
 
-namespace ObsWebSocket.Core;
+namespace ObsWebSocket.Core.Handles;
 
 /// <summary>
 /// How a request addresses one thing in OBS: by name, or by uuid.

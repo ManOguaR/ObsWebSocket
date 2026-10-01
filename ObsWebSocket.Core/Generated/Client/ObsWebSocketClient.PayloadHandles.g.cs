@@ -2,6 +2,7 @@
 #nullable enable
 
 using System;
+using ObsWebSocket.Core.Handles;
 using ObsWebSocket.Core.Protocol.Common;
 
 namespace ObsWebSocket.Core;

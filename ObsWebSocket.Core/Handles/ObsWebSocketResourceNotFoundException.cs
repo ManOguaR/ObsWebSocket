@@ -1,4 +1,4 @@
-namespace ObsWebSocket.Core;
+namespace ObsWebSocket.Core.Handles;
 
 /// <summary>
 /// Thrown when a name does not match anything in OBS.

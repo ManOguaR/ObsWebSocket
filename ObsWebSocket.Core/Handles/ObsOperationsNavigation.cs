@@ -1,3 +1,5 @@
+using ObsWebSocket.Core.Handles;
+
 namespace ObsWebSocket.Core;
 
 // Getting from one addressed thing to another without going back through the client.

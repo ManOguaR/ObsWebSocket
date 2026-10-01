@@ -1,3 +1,4 @@
+using ObsWebSocket.Core.Handles;
 using ObsWebSocket.Core.Protocol.Common;
 using ObsWebSocket.Core.Protocol.Requests;
 using ObsWebSocket.Core.Protocol.Responses;
