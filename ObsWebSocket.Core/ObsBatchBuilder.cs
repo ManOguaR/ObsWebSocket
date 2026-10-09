@@ -27,7 +27,7 @@ public sealed partial class ObsBatchBuilder
 
     /// <summary>
     /// Appends a raw batch item. Use this for request types the generated methods do not cover,
-    /// or when the payload is a hand-built <see cref="System.Text.Json.JsonElement"/>.
+    /// or when the payload is a hand-built <see cref="JsonElement"/>.
     /// </summary>
     /// <param name="item">The item to append.</param>
     /// <returns>The same builder, for chaining.</returns>

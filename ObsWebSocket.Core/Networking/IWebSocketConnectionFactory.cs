@@ -17,12 +17,12 @@ public interface IWebSocketConnectionFactory
 
 /// <summary>
 /// Default implementation of the <see cref="IWebSocketConnectionFactory"/> interface.
-/// Creates instances of <see cref="WebSocketConnectionWrapper"/> wrapping a standard <see cref="System.Net.WebSockets.ClientWebSocket"/>.
+/// Creates instances of <see cref="WebSocketConnectionWrapper"/> wrapping a standard <see cref="ClientWebSocket"/>.
 /// </summary>
 public class WebSocketConnectionFactory : IWebSocketConnectionFactory
 {
     /// <summary>
-    /// Creates a new instance of an <see cref="IWebSocketConnection"/> using a default <see cref="System.Net.WebSockets.ClientWebSocket"/>.
+    /// Creates a new instance of an <see cref="IWebSocketConnection"/> using a default <see cref="ClientWebSocket"/>.
     /// </summary>
     /// <returns>A new <see cref="WebSocketConnectionWrapper"/>.</returns>
     public IWebSocketConnection CreateConnection() =>

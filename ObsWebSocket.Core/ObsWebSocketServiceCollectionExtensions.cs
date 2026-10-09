@@ -45,7 +45,7 @@ public static class ObsWebSocketServiceCollectionExtensions
         AddSharedServices(services);
 
         // For callers resolving a serializer directly; the client uses the factory per connection.
-        _ = services.AddSingleton<IWebSocketMessageSerializer>(sp =>
+        _ = services.AddSingleton(sp =>
             sp.GetRequiredService<ObsSerializerFactory>()(
                 sp.GetRequiredService<IOptions<ObsWebSocketClientOptions>>().Value.Format
             )

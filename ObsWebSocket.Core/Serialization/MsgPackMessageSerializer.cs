@@ -450,7 +450,7 @@ public class MsgPackMessageSerializer(ILogger<MsgPackMessageSerializer> logger)
 
         string? requestType = null;
         string? requestId = null;
-        Protocol.RequestStatus requestStatus = new(false, 0, "Missing requestStatus");
+        RequestStatus requestStatus = new(false, 0, "Missing requestStatus");
         object? responseData = null;
 
         for (int i = 0; i < count; i++)
@@ -467,7 +467,7 @@ public class MsgPackMessageSerializer(ILogger<MsgPackMessageSerializer> logger)
                 case "requestStatus":
                 {
                     ReadOnlyMemory<byte> statusRaw = ReadRawValue(ref reader);
-                    requestStatus = MessagePackSerializer.Deserialize<Protocol.RequestStatus>(
+                    requestStatus = MessagePackSerializer.Deserialize<RequestStatus>(
                         statusRaw,
                         s_msgPackOptions
                     );

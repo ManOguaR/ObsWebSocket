@@ -231,7 +231,7 @@ public sealed partial class ObsWebSocketClient : IAsyncDisposable
     /// Gets the event subscription flags that were last successfully acknowledged by the server
     /// via an <c>Identified</c> message (either initial connection or after <see cref="ReidentifyAsync"/>).
     /// Returns <c>null</c> if the client is not connected or the handshake hasn't completed.
-    /// See <see cref="ObsWebSocket.Core.Protocol.Generated.EventSubscription"/> for flag values.
+    /// See <see cref="EventSubscription"/> for flag values.
     /// </summary>
     public EventSubscription? CurrentEventSubscriptions { get; private set; }
     #endregion
@@ -432,7 +432,7 @@ public sealed partial class ObsWebSocketClient : IAsyncDisposable
     /// <param name="requestTypeInfo">
     /// Metadata for <paramref name="requestData"/>, for a type this library does not know.
     /// Supplying it from your own <c>JsonSerializerContext</c> keeps the call AOT safe and
-    /// avoids hand building a <see cref="System.Text.Json.JsonElement"/>.
+    /// avoids hand building a <see cref="JsonElement"/>.
     /// </param>
     /// <param name="responseTypeInfo">
     /// Metadata for <typeparamref name="TResponse"/>, for a type this library does not know.
@@ -478,7 +478,7 @@ public sealed partial class ObsWebSocketClient : IAsyncDisposable
     /// <param name="requestTypeInfo">
     /// Metadata for <paramref name="requestData"/>, for a type this library does not know.
     /// Supplying it from your own <c>JsonSerializerContext</c> keeps the call AOT safe and
-    /// avoids hand building a <see cref="System.Text.Json.JsonElement"/>.
+    /// avoids hand building a <see cref="JsonElement"/>.
     /// </param>
     /// <param name="responseTypeInfo">
     /// Metadata for <typeparamref name="TResponse"/>, for a type this library does not know.
@@ -639,7 +639,7 @@ public sealed partial class ObsWebSocketClient : IAsyncDisposable
     /// <param name="requestTypeInfo">
     /// Metadata for <paramref name="requestData"/>, for a type this library does not know.
     /// Supplying it from your own <c>JsonSerializerContext</c> keeps the call AOT safe and
-    /// avoids hand building a <see cref="System.Text.Json.JsonElement"/>.
+    /// avoids hand building a <see cref="JsonElement"/>.
     /// </param>
     /// <param name="responseTypeInfo">
     /// Metadata for <typeparamref name="TResponse"/>, for a type this library does not know.
@@ -2080,12 +2080,12 @@ public sealed partial class ObsWebSocketClient : IAsyncDisposable
     /// <param name="requestData">The request payload object.</param>
     /// <remarks>
     /// In Native AOT, arbitrary objects passed through the batch API path may fail if they are not registered
-    /// in <see cref="ObsWebSocket.Core.Serialization.ObsWebSocketJsonContext"/>.
+    /// in <see cref="ObsWebSocketJsonContext"/>.
     /// </remarks>
     /// <param name="requestTypeInfo">
     /// Metadata for <paramref name="requestData"/>, for a type this library does not know.
     /// Supplying it from your own <c>JsonSerializerContext</c> keeps the call AOT safe and
-    /// avoids hand building a <see cref="System.Text.Json.JsonElement"/>.
+    /// avoids hand building a <see cref="JsonElement"/>.
     /// </param>
     private static JsonElement? SerializeRequestData(
         string requestContext,
@@ -2137,7 +2137,7 @@ public sealed partial class ObsWebSocketClient : IAsyncDisposable
             );
 
     private static void ProcessResponseStatus(
-        Protocol.RequestStatus status,
+        RequestStatus status,
         string requestType,
         string requestId
     )

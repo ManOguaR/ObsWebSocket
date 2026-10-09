@@ -26,7 +26,7 @@ internal sealed class MsgPackJsonElementResolver : IFormatterResolver
         // read and SetInputAudioTracks could not be sent.
         : typeof(T) == typeof(Dictionary<string, bool>)
             ? (IMessagePackFormatter<T>)
-                (object)new MessagePack.Formatters.DictionaryFormatter<string, bool>()
+                (object)new DictionaryFormatter<string, bool>()
         : null;
 
     internal sealed class JsonElementFormatter : IMessagePackFormatter<JsonElement>
