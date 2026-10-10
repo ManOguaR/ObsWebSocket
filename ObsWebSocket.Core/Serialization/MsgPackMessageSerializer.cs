@@ -136,7 +136,7 @@ public class MsgPackMessageSerializer(ILogger<MsgPackMessageSerializer> logger)
         }
     }
 
-    private TPayload? DeserializePayloadCore<TPayload>(object? rawPayloadData)
+    private static TPayload? DeserializePayloadCore<TPayload>(object? rawPayloadData)
         where TPayload : class
     {
         if (rawPayloadData is not ReadOnlyMemory<byte> raw)
@@ -196,7 +196,7 @@ public class MsgPackMessageSerializer(ILogger<MsgPackMessageSerializer> logger)
         }
     }
 
-    private TPayload? DeserializeValuePayloadCore<TPayload>(object? rawPayloadData)
+    private static TPayload? DeserializeValuePayloadCore<TPayload>(object? rawPayloadData)
         where TPayload : struct
     {
         if (rawPayloadData is not ReadOnlyMemory<byte> raw)
