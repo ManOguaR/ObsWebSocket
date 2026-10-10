@@ -1,14 +1,6 @@
 using System.Text.Json;
 using System.Text.Json.Serialization.Metadata;
-using Microsoft.Extensions.Logging;
-using ObsWebSocket.Core.Events;
 using ObsWebSocket.Core.Events.Generated;
-using ObsWebSocket.Core.Networking;
-using ObsWebSocket.Core.Protocol;
-using ObsWebSocket.Core.Protocol.Common;
-using ObsWebSocket.Core.Protocol.Common.FilterSettings;
-using ObsWebSocket.Core.Protocol.Common.InputSettings;
-using ObsWebSocket.Core.Protocol.Generated;
 using ObsWebSocket.Core.Protocol.Requests;
 using ObsWebSocket.Core.Protocol.Responses;
 
