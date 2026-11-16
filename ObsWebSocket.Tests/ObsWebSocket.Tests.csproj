@@ -24,7 +24,7 @@
     <!-- Removed Testing Platform Extensions for now - can add back if needed -->
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.CodeAnalysis.Common" Version="5.9.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Common" Version="5.12.0" />
     <PackageReference
       Include="Microsoft.Extensions.Configuration.EnvironmentVariables"
       Version="10.0.15"
