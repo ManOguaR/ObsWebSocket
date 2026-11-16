@@ -13,28 +13,28 @@
     <TestingPlatformShowTestsFailure>true</TestingPlatformShowTestsFailure>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.14" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.15" />
     <PackageReference Include="Microsoft.Extensions.TimeProvider.Testing" Version="10.11.0" />
-    <PackageReference Include="MSTest" Version="4.5.2" />
+    <PackageReference Include="MSTest" Version="4.5.3" />
     <PackageReference Include="Microsoft.Testing.Extensions.CodeCoverage" Version="18.12.0" />
-    <PackageReference Include="MSTest.Analyzers" Version="4.5.2">
+    <PackageReference Include="MSTest.Analyzers" Version="4.5.3">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <!-- Removed Testing Platform Extensions for now - can add back if needed -->
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.CodeAnalysis.Common" Version="5.9.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Common" Version="5.12.0" />
     <PackageReference
       Include="Microsoft.Extensions.Configuration.EnvironmentVariables"
-      Version="10.0.14"
+      Version="10.0.15"
     />
     <PackageReference
       Include="Microsoft.Extensions.Configuration.FileExtensions"
-      Version="10.0.14"
+      Version="10.0.15"
     />
-    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="10.0.14" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="10.0.14" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="10.0.15" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="10.0.15" />
     <PackageReference Include="Moq" Version="4.21.0" />
   </ItemGroup>
   <!-- Project Reference -->
